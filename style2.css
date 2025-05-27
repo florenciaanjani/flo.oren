@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+
+}
+
+header {
+    position: static; /*  */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: medium;
+    color: darkslateblue;
+}
+
+.logo span{
+    color: darksalmon;
+}
+
+.navigation {
+    margin-left: 300px;
+}
+
+.navigation a {
+    font-size: medium;
+    /* mengatur ukuran huruf navigasi atau menu */
+    color:lightsalmon;
+    /* mengatur warna menu */
+    margin-right: 30px;
+    /* mengatur jarak antar menu (home, portofilo, dll) */
+    text-decoration: none;
+    /* menghilangkan undearline pada menu */
+    font-weight: 400;
+    /* mengatur ketebalan huruf */
+    transition: .10s;
+}
+
+.navigation a:hover {
+    color:cadetblue;
+}
+
+.home {
+    position: relative;
+    width: 100%; /* mengatur tinggi gambar */
+    height: 115vh; /* mengatur lebar gambar */
+    background: url(image.jpg);/* menambakan gambar background */
+    background-size: cover; /* mengatur size gambar */
+    background-position: center; /* mengatur posisi gambar */
+    display: flex; /* mengatur flex */
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.content {
+    max-width: 500px;
+    color: rgb(8, 8, 8);
+}
+
+/* mengatur ukuran heading 2 yang sudah didefinisikan di HTML */
+.content h2 {
+    font-size: 50px;
+    color: rgb(118, 183, 248);
+}
+
+.content h2 span {
+    color: rgb(248, 130, 219);
+}
+
+.content h3 {
+    font-size: 27px;
+    /* mengatur ukuran huruf h4 yang telah didefinisikan di HTML agar ukurannya sesuai */
+}
+
+.content p {
+    padding: 10px 0 40px 0;
+    /* mengatur batasan atas, bawah, kanan, kiri */
+}
+
+.btn-group a {
+    color: firebrick;
+    text-decoration: none;
+    background-color: rgb(255, 188, 163);
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 2px rgb(233, 233, 94);
+}
+
+.btn-group a:hover:nth-child(1) {
+    color:rgb(14, 13, 13);
+    background: transparent;
+}
+
+.btn-group a:hover:nth-child(2) {
+    color: rgb(22, 22, 22);
+    background: transparent;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 80px;
+}
+.social-icons a {
+    display: inline-block;
+    background: rgb(212, 245, 245);
+    width: 35px; /* mengatur lebar icon */
+    height: 35px; /* mengatur tinggi icon */
+    line-height: 35px; /* mengatur posisi icon agar berada ditengah lingkaran */
+    text-align: center;
+    color: rgb(148, 148, 224);
+    border-radius: 20px; /* mengatur border agar berbentuk lingkaran */
+    border: 1px rgb(255, 255, 255);
+    outline: 2px rgb(199, 114, 53);
+    margin-right: 30px;
+}
